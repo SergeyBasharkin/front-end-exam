@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/slider/build/jquery.js"></script>
+    <script src="js/slider/build/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="js/slider/build/mediaelementplayer.min.css"/>
+</head>
+<body>
+<div class="background"></div>
+
+<div class="wrapper">
+    <div class="content clearfix">
+        <div class="parent1 aligned">
+            <div class="inline-block">
+                <div class="inline">
+                    <span class="title"><i>Current Student</i></span>
+                    <hr>
+                    <img src="img/1.jpg" alt="1" class="thumbnail">
+                </div>
+                <div class="inline">
+                    <span class="title"><i>Current Student</i></span>
+                    <hr>
+                    <img src="img/1.jpg" alt="1" class="thumbnail">
+                </div>
+            </div>
+            <div class="vertical">
+                <div class="title-table">
+                    <span class="title"><i>Current Student</i></span>
+                </div>
+                <hr>
+
+                <img src="img/1.jpg" alt="1" class="media-img thumbnail">
+                <div class="media-body">
+                    <span>Sentumquisque morbi dui congue tincidunt eu</span>
+                    <br>
+                    <p>Morbit incidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam
+                        interdum eros dui urna consequam ac nisl nullam ligula vestassa. Condimen tumfelis et amet
+                        tellent quisquet.</p>
+                </div>
+
+            </div>
+            <div class="vertical">
+                <div class="title-table">
+                    <span class="title"><i>Current Student</i></span>
+                </div>
+                <hr>
+
+                <img src="img/1.jpg" alt="1" class="media-img thumbnail">
+                <div class="media-body">
+                    <span>Sentumquisque morbi dui congue tincidunt eu</span>
+                    <br>
+                    <p>Morbit incidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam
+                        interdum eros dui urna consequam ac nisl nullam ligula vestassa. Condimen tumfelis et amet
+                        tellent quisquet.</p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="end">
+                Click here to view all of the latest news and events»
+            </div>
+        </div>
+        <div class="parent2 aligned">
+            <div class="inline">
+                <span class="title"><i>Current Student</i></span>
+                <hr>
+                <img src="img/1.jpg" alt="1" class="thumbnail">
+            </div>
+            <div class="vertical">
+                <span class="title"><i>Current Student</i></span>
+                <hr>
+                <ul class="list">
+                    <li><span>Lorem.</span></li>
+                    <li><span>Voluptatum!</span></li>
+                    <li><span>Consequatur.</span></li>
+                    <li><span>Placeat?</span></li>
+                    <li><span>Aperiam?</span></li>
+                    <li><span>Labore.</span></li>
+                    <li><span>Eligendi.</span></li>
+                    <li><span>Assumenda!</span></li>
+                    <li><span>Repudiandae.</span></li>
+                    <li><span>Nam.</span></li>
+                    <li><span>Animi!</span></li>
+                    <li><span>Explicabo.</span></li>
+                    <li><span>Nesciunt?</span></li>
+                    <li><span>Rerum.</span></li>
+                    <li><span>Suscipit!</span></li>
+                    <li><span>Iure.</span></li>
+                    <li><span>Delectus!</span></li>
+                    <li><span>Quos.</span></li>
+                    <li><span>Sed!</span></li>
+                    <li><span>Pariatur.</span></li>
+                    <li><span>Quam?</span></li>
+                    <li><span>Nulla.</span></li>
+                    <li><span>Dolor.</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="parent3 aligned">
+            <div class="video">
+                <span class="title"><i>Current Student</i></span>
+                <hr>
+
+                <video width="260" height="200" src="media/echo-hereweare.mp4" type="video/mp4"
+                       id="player1" poster="media/echo-hereweare.jpg"
+                       controls="controls" preload="none"></video>
+            </div>
+            <div class="vertical">
+                <span class="title"><i>Current Student</i></span>
+                <hr>
+                <img src="img/1.jpg" alt="1" class="right-img">
+            </div>
+            <div class="vertical">
+                <span class="title"><i>Current Student</i></span>
+                <hr>
+                <img src="img/1.jpg" alt="1" class="right-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+
+</footer>
+<script>
+
+    $('audio,video').mediaelementplayer({
+        //mode: 'shim',
+        success: function (player, node) {
+            $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+        }
+    });
+
+</script>
+
+<input type="button" id="stopall" value="Stop all">
+
+<script>
+    $('#stopall').click(function () {
+        $('video, audio').each(function () {
+            $(this)[0].player.pause();
+        });
+    });
+</script>
+</body>
+</html>

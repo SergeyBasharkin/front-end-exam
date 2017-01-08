@@ -1,0 +1,110 @@
+body{
+    background-color: #231f20;
+}
+
+.content {
+    width: 91%;
+    position: relative;
+    left: 5%;
+    right: 4%;
+}
+
+.wrapper {
+    background-color: white;
+    width: 100%;
+}
+
+.parent1{
+    width: 50%;
+}
+.parent2{
+    width: 25%;
+}
+.parent3{
+    width: 25%;
+}
+
+.aligned {
+    float: left;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.inline{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.video{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inline-block .inline{
+    width: 50%;
+    display: table-cell;
+    float: left;
+}
+hr{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.vertical{
+    margin-bottom: 10px;
+}
+.vertical .title-table .title{
+    margin-bottom: 15px;
+
+}
+.vertical .media-body{
+    max-width: calc(100% - 155px);
+    display: inline-block;
+    font-size: 0.951em;
+}
+.vertical .media-img{
+    width: 125px;
+    height: 125px;
+}
+.media-body span{
+    color: #CE4521;
+}
+.media-body p{
+    padding-top: 10px;
+    font-size: 0.921em;
+
+
+}
+hr{
+    width: calc(100% - 20px);
+}
+.thumbnail{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+img {
+    padding: 5px;
+    width: 200px;
+    height: 80px;
+    vertical-align: top;
+}
+
+.end{
+    color: #ce4521;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.list li {
+    color: #ce4521;
+    list-style-type: none; /* Убираем маркеры у списка */
+}
+.list li:before {
+    content: "» "; /* Добавляем в качестве маркера символ */
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #014CB6;
+}
